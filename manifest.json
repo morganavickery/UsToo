@@ -1,10 +1,11 @@
 {
   "manifest_version": 2,
-
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
+  "name": "#UsToo",
+  "description": "This extension helps you stay up to date with feminism in your community and around the world.",
   "version": "1.0",
-
+  "chrome_url_overrides" : {
+    "newtab": "background.html"
+  },
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
@@ -12,5 +13,7 @@
   "permissions": [
     "activeTab",
     "https://ajax.googleapis.com/"
-  ]
+  ],
+  "web_accessible_resources":["https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js","http://pastebin.com/raw/j13uM49D"],
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com 'unsafe-eval'; object-src 'self'"  
 }
