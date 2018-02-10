@@ -1,0 +1,17 @@
+.panel.date {
+    margin: 0px;
+    width: 20px;
+    text-align: center;
+}
+
+.panel.date .month {
+    padding: 1px 0px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.panel.date .day {
+    padding: 1px 0px;
+    font-weight: 500;
+    font-size: 1em;
+}
